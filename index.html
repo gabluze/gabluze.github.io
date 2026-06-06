@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jardim do Tempo</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/Bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+</head>
+<body>
+<!-- SISTEMA DE GRID -->
+
+	<div class="container">
+		<div class="row my-3">
+			<div class="col-lg-8">
+				<h1 class="logo">Jardim do Tempo <i class="fa-solid fa-leaf"></i></h1>
+			</div>
+			<div class="col-lg-4">
+				<form>
+					<div class="input-group mt-3">
+						<input type="text" name="pesquisar" class="form-control" placeholder="Pesquisar">
+						<button class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+<!-- NAV BAR -->
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+				 	<div class="container-fluid">
+					    <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					      <span class="navbar-toggler-icon"></span>
+					    </button>
+					    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+					      <ul class="navbar-nav">
+					        <li class="nav-item">
+					          <a class="nav-link" href="#about">Sobre</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#type">Tipos</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#seasons">Estações</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#known">Curiosidades</a>
+					        </li>
+					        <li class="nav-item">
+					          <a class="nav-link" href="#forms">Formulário</a>
+					        </li>
+					     </ul>
+				    </div>
+				  </div>
+				</nav>
+			</div>
+		</div>
+
+<!-- CAROUSEL -->
+		<div class="row my-3">
+			<div class="col-lg-8">
+				<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="images/a.jpg" class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/b.jpg" class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/c.jpg" class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/d.jpg" class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/e.jpg" class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/f.jpg" class="d-block w-100" alt="...">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="images/g.jpg" class="d-block w-100" alt="...">
+				    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</div>
+
+<!-- ACCORDION -->
+			<div class="col-lg-4">
+				<h4>Perguntas frequentes</h4>
+				<div class="accordion" id="accordionExample">
+				  <div class="accordion-item">
+				    <h2 class="accordion-header">
+				      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				        O que é botânica?
+				      </button>
+				    </h2>
+				    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				      <div class="accordion-body">
+				        A Botânica é o ramo da Biologia responsável pelo estudo das plantas, abrangendo desde sua morfologia e fisiologia até sua classificação, evolução e relação com o meio ambiente. É uma ciência fundamental para compreendermos o funcionamento dos ecossistemas e a importância das plantas para a vida na Terra.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				        Todas as plantas realizam fotossíntese?
+				      </button>
+				    </h2>
+				    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				      <div class="accordion-body">
+				        A maioria das plantas realiza fotossíntese, sim. Esse processo é essencial para a conversão da energia solar em energia química, que será utilizada pela planta para crescer e se desenvolver. No entanto, existem exceções: algumas espécies, especialmente parasitas, não realizam fotossíntese e obtêm nutrientes diretamente de outros organismos vegetais.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				        O que é clorofila?
+				      </button>
+				    </h2>
+				    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				      <div class="accordion-body">
+				        A clorofila é o pigmento responsável pela cor verde das plantas e tem um papel essencial na fotossíntese, pois capta a luz solar que será convertida em energia. É graças à clorofila que as plantas conseguem produzir seu próprio alimento.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				        Os cactos tem folhas??
+				      </button>
+				    </h2>
+				    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				      <div class="accordion-body">
+				        Sim. Os cactos são plantas adaptadas a ambientes áridos e, por isso, suas folhas evoluíram para espinhos — uma estratégia para reduzir a perda de água e se proteger de predadores. A fotossíntese é realizada pelo caule, que se tornou suculento e verde para essa função.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+				        Por que as flores têm cores e aromas variados?
+				      </button>
+				    </h2>
+				    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				      <div class="accordion-body">
+				        As cores e os aromas das flores têm como principal função atrair agentes polinizadores, como insetos, aves e outros animais. Essa diversidade é resultado de adaptações evolutivas que aumentam as chances de sucesso na reprodução das plantas.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+				        Qual a diferença entre plantas vasculares e avasculares?
+				      </button>
+				    </h2>
+				    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				      <div class="accordion-body">
+				        Plantas vasculares possuem tecidos especializados para o transporte de água e nutrientes — o xilema e o floema. Esse grupo inclui pteridófitas, gimnospermas e angiospermas. Já as plantas avasculares, como as briófitas, não possuem esses tecidos e, por isso, dependem da difusão para o transporte interno, o que limita seu tamanho e as mantém em ambientes úmidos.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEi" aria-expanded="false" aria-controls="collapseEi">
+				        Qual a importância das plantas para o solo?
+				      </button>
+				    </h2>
+				    <div id="collapseEi" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				      <div class="accordion-body">
+				        As plantas ajudam na fixação e conservação do solo por meio de suas raízes. Elas evitam a erosão, aumentam a retenção de água e contribuem para a formação de matéria orgânica. Sem vegetação, o solo se torna vulnerável à degradação.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="accordion-item">
+				    <h2 class="accordion-header">
+				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+				        O que é fotoperiodismo?
+				      </button>
+				    </h2>
+				    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+				      <div class="accordion-body">
+				        Fotoperiodismo é a resposta das plantas à variação na duração do dia e da noite. Esse mecanismo influencia processos como floração, germinação e queda de folhas. Existem plantas de dias curtos, de dias longos e neutras, cada uma adaptada a diferentes ciclos de luz.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div><hr>
+
+<!-- INTRODUÇÃO -->
+		<div class="row mb-3">
+			<h1 id="about">Botânica: A Ciência que Respira com a Terra</h1>
+			<div class="col-lg-12">
+			<p>A botânica é o campo da ciência que se debruça sobre o estudo das plantas — mas dizer apenas isso seria como reduzir uma floresta inteira a uma única folha. Falar de botânica é falar da vida que respira em silêncio, das raízes que sustentam o mundo, e da dança invisível que as folhas fazem com o vento para manter o equilíbrio do planeta.<br><br>
+
+As plantas estão em todos os lugares: nos pratos que comemos, nas roupas que vestimos, no ar que respiramos e até nas memórias que guardamos. Cada flor carrega uma função, uma beleza, e uma importância que vai além do olhar. Quando falamos de plantas, estamos falando de alimento — não só para nós, humanos, mas para toda a cadeia alimentar. Estamos falando de abrigo para pequenos seres, sombra para o descanso, e proteção contra a erosão que tenta corroer o solo. Estamos falando de regulação climática, de umidade, de equilíbrio. Estamos falando de fotossíntese — um milagre bioquímico que transforma luz em vida e devolve oxigênio ao mundo.<br><br>
+
+As plantas são silenciosas, mas incansáveis trabalhadoras da natureza. Enquanto o mundo corre apressado, elas permanecem firmes, convertendo luz em energia, brotando novas folhas, oferecendo flores e frutos. São elas que mantêm o planeta respirável, fértil e belo. E mesmo com toda essa responsabilidade ecológica, ainda se prestam ao papel de encantar. Sim, elas também existem para o deleite: para perfumar, enfeitar, colorir. São usadas na ornamentação de jardins, parques, praças, varandas e até nos cantinhos mais improváveis das casas — porque onde há uma planta, há um pedaço de vida pulsando.<br><br>
+
+Economicamente, são uma verdadeira riqueza. Fornecem madeira para construções e móveis, fibras para tecidos, matéria-prima para cosméticos, perfumes e medicamentos. A indústria farmacêutica se curva diante de suas propriedades. E ainda assim, muitas vezes, nos esquecemos de agradecer por tamanha generosidade.<br><br>
+
+Por isso, este site nasce como um pequeno jardim digital — um espaço de contemplação e aprendizado, onde a beleza e a ciência caminham de mãos dadas. Aqui, você encontrará informações, curiosidades, dicas e encantos sobre o universo vegetal. Porque cuidar das plantas é também uma forma de cuidar de nós mesmos. E quem presta atenção nelas, percebe: as plantas têm muito a nos ensinar. Basta parar, respirar fundo, e observar. 🌱</p>
+				</section>
+			</div>
+		</div><hr>
+
+		<div class="row mb-3">
+				<h1 id="type">Do Musgo à Flor: A Evolução das Plantas<br><br></h1>
+
+<!-- PRIMEIRO CARD -->
+				<div class="col-lg-3">
+					<div class="card" style="width: 18rem;">
+					  <img src="images/brio.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">Musgos e Fungos</h5>
+					    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalBrio">Saiba Mais</a>
+					  </div>
+					</div>
+					<div class="modal fade" id="modalBrio" tabindex="-1" aria-labelledby="modalBrioLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="modalBriofitasLabel">Introdução ao Mundo das Briófitas</h5>
+					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+					      </div>
+					      
+					      <div class="modal-body">
+					        <iframe width="100%" height="300vh" src="https://www.youtube.com/embed/5y1ZSO4LEcU?si=0ESGskAynVipgoIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					      </div>
+					      
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+<!-- SEGUNDO CARD -->
+				<div class="col-lg-3">
+					<div class="card" style="width: 18rem;">
+					  <img src="images/pte.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">Samambaias e Cavalinhas</h5>
+					    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPte">Saiba Mais</a>
+					  </div>
+					</div>
+				</div>
+				<div class="modal fade" id="modalPte" tabindex="-1" aria-labelledby="modalPteLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="modalPteLabel">Introdução ao Mundo das Pteridófitas</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+				      </div>
+				      
+				      <div class="modal-body">
+				        <iframe width="100%" height="300vh" src="https://www.youtube.com/embed/aGhQgXs9VbQ?si=3bcxLJTxhO6ijBGm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				      </div>
+				      
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+				      </div>
+				      
+				    </div>
+				  </div>
+				</div>
+
+
+<!-- TERCEIRO CARD -->
+				<div class="col-lg-3"> 
+					<div class="card" style="width: 18rem;">
+					  <img src="images/gimno.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">Sementes e Pinheiros</h5>
+					    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalGimno">Saiba Mais</a>
+					  </div>
+					</div>
+				</div>
+				<div class="modal fade" id="modalGimno" tabindex="-1" aria-labelledby="modalGimnoLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="modalGimnoLabel">Introdução ao Mundo das Gimnospermas</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+				      </div>
+				      
+				      <div class="modal-body">
+				        <iframe width="100%" height="300vh" src="https://www.youtube.com/embed/yb6z6hejZ9E?si=jny0mg5cn2YspyM_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				      </div>
+				      
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+				      </div>
+				      
+				    </div>
+				  </div>
+				</div>
+
+
+<!-- QUARTO CARD -->
+				<div class="col-lg-3">
+					<div class="card" style="width: 18rem;">
+					  <img src="images/angio.jpg" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">Flores e Frutos</h5>
+					    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAngio">Saiba Mais</a>
+					  </div>
+					</div>
+				</div>
+				<div class="modal fade" id="modalAngio" tabindex="-1" aria-labelledby="modalAngioLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="modalAngioLabel">Introdução ao Mundo das Angiospermas</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+				      </div>
+				      <div class="modal-body">
+				        <iframe width="100%" height="300vh" src="https://www.youtube.com/embed/KPF-sTgUybo?si=yodk1ThZhzobeDh2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+				      </div>
+				     </div>
+				   </div>
+			 	 </div>
+				</div>
+
+<!-- CONTEÚDO -->
+		<br><div class="row mb-3">
+			<div class="col-lg-4">
+				<div class="list-group">
+				  <a href="#a" class="list-group-item list-group-item-action">1. Briófitas</a>
+				  <a href="#b" class="list-group-item list-group-item-action">2. Pteridófitas</a>
+				  <a href="#c" class="list-group-item list-group-item-action">3. Gimnosperma</a>
+				  <a href="#d" class="list-group-item list-group-item-action">4. Angiosperma</a>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<h3 id="a">Briófitas</h3>
+				<p>As briófitas são plantas avasculares, ou seja, não possuem vasos condutores como xilema e floema, o que limita seu porte e as mantém dependentes de ambientes úmidos para sobreviver e se reproduzir. Consideradas as mais primitivas entre as plantas terrestres, elas representam um importante passo evolutivo na conquista do ambiente terrestre. Seu ciclo de vida é marcado pela alternância de gerações, sendo o gametófito a fase dominante — uma característica única em comparação aos outros grupos vegetais. Embora pequenas, as briófitas exercem funções ecológicas fundamentais: ajudam na retenção da umidade do solo, previnem a erosão, criam micro-habitats e ainda servem como bioindicadoras da qualidade do ar. Entre os principais representantes, destacam-se os musgos, as hepáticas e os antóceros, que colonizam desde troncos até rochas sombreadas, mostrando que mesmo as formas de vida mais discretas têm grande importância nos ecossistemas.</p> </div>
+			
+			<div class="col-lg-6">
+				<h3 id="b">Pteridófitas</h3>
+				<p>As pteridófitas são plantas vasculares que, embora não produzam sementes, já apresentam tecidos condutores — o xilema e o floema — permitindo maior porte e maior diversidade de ambientes em comparação às briófitas. Esse grupo representa um avanço evolutivo importante, pois marca a transição para estruturas mais complexas e adaptadas ao meio terrestre. Seu ciclo de vida também envolve alternância de gerações, mas, diferentemente das briófitas, aqui o esporófito é a fase dominante, o que evidencia a sofisticação progressiva do reino Plantae. As pteridófitas dependem da água para a reprodução sexuada, já que seus gametas ainda precisam nadar até a oosfera, o que as mantém ligadas, em parte, à umidade. Esteticamente marcantes e ecologicamente relevantes, elas ajudam na formação de solos, protegem encostas e contribuem para o equilíbrio dos ecossistemas tropicais. Entre os exemplos mais conhecidos estão as samambaias, avencas e cavalinhas — plantas que unem beleza, resistência e um passado evolutivo fascinante.</p></div>
+			
+			<div class="col-lg-6">
+				<h3 id="c">Gimnosperma</h3>
+				<p>As gimnospermas são plantas vasculares que marcam um passo decisivo na evolução vegetal: o surgimento da semente, estrutura que protege o embrião e facilita sua dispersão em ambientes variados. Diferentemente das angiospermas, suas sementes não são envolvidas por frutos — daí o nome "gimnosperma", que significa "semente nua". Com o esporófito como fase dominante, seu ciclo de vida é completamente adaptado ao ambiente terrestre, dispensando a água como meio obrigatório para a fecundação. A polinização é geralmente anemófila, ou seja, feita pelo vento, o que possibilita a reprodução mesmo em climas mais secos. As gimnospermas são, em sua maioria, árvores perenes e resistentes, com folhas em forma de agulha e crescimento lento, características que as tornam fundamentais na formação de florestas boreais e temperadas. Entre os representantes mais conhecidos estão os pinheiros, ciprestes e araucárias — plantas imponentes que resistem ao tempo e demonstram como a evolução vegetal construiu estruturas cada vez mais independentes e eficientes</p></div>
+			
+			<div class="col-lg-12">
+				<h3 id="d">Angiosperma</h3>
+				<p>As angiospermas são o grupo mais recente, diverso e evoluído do reino Plantae. Caracterizam-se por produzir flores e frutos, estruturas que revolucionaram a forma como as plantas se reproduzem e se espalham pelo planeta. As flores funcionam como atrativos para polinizadores — como insetos, aves e até mamíferos — enquanto os frutos protegem e facilitam a dispersão das sementes. Essa sofisticação reprodutiva permitiu às angiospermas colonizar praticamente todos os ambientes terrestres, dos desertos às florestas tropicais. Assim como nas gimnospermas, o esporófito é a fase dominante do ciclo de vida, mas nas angiospermas a fecundação é dupla — um processo exclusivo e altamente eficiente. Possuem grande variação morfológica e funcional, o que as torna essenciais para os ecossistemas e para a economia humana: são fonte de alimento, madeira, fibras, medicamentos, óleos e combustíveis. Com milhões de espécies catalogadas, as angiospermas são a prova viva de como a diversidade e a adaptação são chaves para o sucesso evolutivo.</p>
+				
+			</div>
+		</div><hr>
+
+<!-- ESTAÇÕES -->
+		<div class="row mb-3">
+			<h1 id="seasons">Estações do ano e seus elementos na natureza</h1>
+			<div class="col-lg-3">
+				<div class="card" style="width: 19rem;">
+				  <img src="images/spring.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Primaveira - O Despertar da Vida</h5>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<p>A primavera é uma estação marcada pela renovação e pelo florescimento. Após o frio do inverno, a temperatura começa a subir e os dias se alongam, permitindo mais luz solar. Esse aumento na luminosidade e a elevação da temperatura ativam processos vitais nas plantas, como a germinação e o crescimento das flores. A precipitação também é mais constante nessa estação, favorecendo a vegetação que começa a se espalhar e cobrir o solo com cores vibrantes. A natureza se torna um verdadeiro espetáculo de flores, folhas e cores. A fauna também entra em um período de atividade intensa, com o despertar de muitos animais que estavam em hibernação, e o início da reprodução de várias espécies. É a estação da renovação, quando tudo volta a florescer.<br>
+
+<h5>Elementos principais da primavera:</h5><br>
+
+• Aumento da temperatura e luz solar<br>
+
+• Precipitação moderada e constante<br>
+
+• Germinação e florescimento das plantas<br>
+
+• Maior atividade da fauna</p><br>
+			</div>
+			<div class="col-lg-3">
+				<div class="card" style="width: 19rem;">
+				  <img src="images/summer.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Verão - O Máximmo da Energia Solar</h5>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<p>O verão é a estação mais quente do ano, com temperaturas elevadas e dias longos, o que proporciona uma intensa exposição à luz solar. Esse é o período de maior atividade fotossintética das plantas, que aproveitam a abundância de luz e calor para crescer rapidamente. As plantas, principalmente as de regiões tropicais, estão no auge de seu desenvolvimento, e muitos frutos começam a amadurecer. A evaporação é alta, o que pode resultar em uma maior necessidade de água por parte das plantas e dos animais. Em algumas regiões, o verão também pode ser marcado por chuvas intensas, criando um contraste entre a abundância de calor e o aumento da umidade. A fauna está em plena atividade, com muitos animais buscando alimento para a reprodução ou para se preparar para o outono.<br>
+
+<h5>Elementos principais do verão:</h5><br>
+
+• Altas temperaturas e longos períodos de luz solar<br>
+
+• Alta taxa de fotossíntese e crescimento rápido das plantas<br>
+
+• Maior evaporação e necessidade de água<br>
+
+• Chuvas intensas em algumas regiões<br>
+
+• Grande atividade da fauna</p><br>
+			</div>
+			<div class="col-lg-3">
+				<div class="card" style="width: 19rem;">
+				  <img src="images/autumn.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Outono - A Despedida e o Começo</h5>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<p>O outono é um período de transição entre o calor do verão e o frio do inverno. As temperaturas começam a cair, os dias ficam mais curtos e a luz solar diminui gradualmente. As plantas começam a se preparar para o inverno, e muitas delas iniciam o processo de queda das folhas, economizando energia e recursos para o período de dormência. As cores das folhas mudam, criando um espetáculo visual com tons de vermelho, laranja e amarelo. A quantidade de chuvas tende a ser moderada, o que favorece a decomposição das folhas caídas e a renovação do solo. A fauna também se prepara para o inverno, com alguns animais acumulando reservas de alimento ou migrando para climas mais amenos. O outono é um período de amadurecimento e recolhimento.<br>
+
+<h5>Elementos principais do outono:</h5><br>
+
+• Queda das temperaturas e diminuição da luz solar<br>
+
+• Mudança nas cores das folhas das árvores<br>
+
+• Menor taxa de fotossíntese e queda das folhas<br>
+
+• Precipitação moderada e maior decomposição de matéria orgânica<br>
+
+• Preparação da fauna para o inverno</p><br>
+			</div>
+			<div class="col-lg-3">
+				<div class="card" style="width: 19rem;">
+				  <img src="images/winter.jpg" class="card-img-top" alt="...">
+				  <div class="card-body">
+				    <h5 class="card-title">Inverno - O Gélido Repouso</h5>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-9">
+				<p>O inverno é caracterizado pelo frio intenso, noites longas e dias curtos. As temperaturas baixas reduzem a atividade biológica na natureza, e muitas plantas entram em um período de dormência. Algumas plantas perenes, como as coníferas, mantêm suas folhas (ou agulhas), adaptadas para resistir ao frio, enquanto outras, como as decíduas, perdem suas folhas para economizar energia. A precipitação pode ocorrer na forma de neve ou chuva fria, e o solo tende a ficar congelado ou saturado de água, dificultando a absorção de nutrientes pelas plantas. A fauna se adapta ao inverno de diferentes formas, com alguns animais hibernando ou migrando, enquanto outros, como aves, se alimentam de fontes que ainda restam nas árvores ou nos solos. O inverno é, portanto, uma estação de descanso e preservação de recursos, preparando o ecossistema para o ciclo seguinte.<br>
+
+<h5>Elementos principais do inverno:</h5><br>
+
+• Temperaturas baixas e dias curtos<br>
+
+• Redução na fotossíntese e dormência das plantas<br>
+
+• Precipitação na forma de neve ou chuva gelada<br>
+
+• Solos congelados ou saturados<br>
+
+• Adaptações da fauna para o frio (hibernação, migração)</p>
+			</div>
+		</div>
+
+<!-- CURIOSIDADES -->
+		<div class="row mb-3">
+			<h1 id="known">Você Sabia...?</h1>
+			<div class="col-lg-6">
+				<p><h5>1. As plantas “falam” entre si!</h5><br>
+Por meio de compostos químicos voláteis e sinais elétricos pelas raízes, algumas plantas conseguem alertar outras sobre a presença de predadores. É como se elas enviassem um mensagem “WhatsApp” vegetal dizendo: “Cuidado, hein!”<br><br>
+
+<h5>2. Existem plantas que digerem carne.</h5><br>
+As plantas carnívoras, como a dioneia e a nepenthes, se adaptaram a solos pobres em nutrientes capturando insetos para complementar sua dieta. Elas não caçam por maldade — só estão famintas por nitrogênio.</p>
+			</div>
+			<div class="col-lg-6">
+				<p><h5>5. O aroma das flores é uma estratégia evolutiva.</h5><br>
+Perfumes florais não são só para encantar humanos — eles servem como isca para atrair polinizadores específicos, garantindo o sucesso reprodutivo da planta.<br><br>
+
+<h5>6. O girassol segue o sol — literalmente.</h5><br>
+Esse movimento se chama heliotropismo, e o girassol jovem gira sua flor durante o dia acompanhando o sol. Quando amadurece, ele para de girar e fica virado permanentemente para o leste.</p>
+			</div>
+			<div class="col-lg-6">
+				<p><h5>3. O bambu é uma das plantas que crescem mais rápido no mundo.</h5><br>
+Algumas espécies de bambu podem crescer até 1 metro por dia! Isso se deve à forma como as células se alongam com água — é um verdadeiro “boom” vegetal.<br><br>
+
+<h5>4. As sementes mais antigas ainda viáveis foram encontradas em escavações arqueológicas.</h5><br>
+Sementes de tamareiras com mais de 2.000 anos foram encontradas no Oriente Médio e... germinaram! Imagina uma planta voltando à vida depois de dois milênios dormindo?</p>
+			</div>
+			<div class="col-lg-6">
+				<p><h5>7. Algumas árvores “se reconhecem” e cuidam das suas.</h5><br>
+Estudos com faias e acácias mostram que árvores da mesma espécie, e até da mesma “família”, compartilham nutrientes por meio de conexões subterrâneas, priorizando seus “parentes”. É tipo uma árvore dizendo: “toma aqui um pouquinho de fósforo, irmãzinha.”<br><br>
+
+<h5>8. A vitória-régia é uma engenheira natural.</h5><br>
+Essa planta aquática consegue sustentar até o peso de uma criança sobre suas folhas gigantes, graças à sua estrutura radial com nervuras reforçadas — uma verdadeira obra-prima da engenharia da natureza.</p>
+			</div>
+			
+		</div><hr>
+
+<!-- FORMULÁRIO -->
+		<div class="row mb-3">
+			<h1 id="forms"><i class="fa-solid fa-comments"> Fale conosco</i></h1>
+			<p>Assim como uma semente precisa ser lançada à terra para crescer, toda boa troca começa com uma simples mensagem. Se você tem dúvidas, sugestões, curiosidades ou só quer conversar sobre o incrível universo das plantas, este é o espaço certo.<br>
+			Preencha os campos abaixo e nos envie sua mensagem — estamos aqui para ouvir, cuidar e responder com carinho.</p>
+			<form class="row g-3">
+			  <div class="col-md-6">
+			    <label for="nome" class="form-label">Nome</label>
+			    <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+			  </div>
+			  <div class="col-md-6">
+			    <label for="email" class="form-label">Email</label>
+			    <input type="email" class="form-control" id="email" placeholder="usuário@mail.com">
+			  </div>
+			  <div class="col-md-7">
+			    <label for="city" class="form-label">Cidade</label>
+			    <input type="text" class="form-control" id="city" placeholder="Cidade - Bairro">
+			  </div>
+			  <div class="col-md-5">
+			    <label for="state" class="form-label">Estado</label>
+			    <select id="state" class="form-select">
+			      <option selected>UF</option>
+			      <option>AC</option>
+			      <option>AL</option>
+			      <option>AP</option>
+			      <option>AM</option>
+			      <option>BA</option>
+			      <option>CE</option>
+			      <option>DF</option>
+			      <option>ES</option>
+			      <option>GO</option>
+			      <option>MA</option>
+			      <option>MT</option>
+			      <option>MS</option>
+			      <option>MG</option>
+			      <option>PA</option>
+			      <option>PB</option>
+			      <option>PR</option>
+			      <option>PE</option>
+			      <option>PI</option>
+			      <option>RJ</option>
+			      <option>RN</option>
+			      <option>RS</option>
+			      <option>RO</option>
+			      <option>RR</option>
+			      <option>SC</option>
+			      <option>SP</option>
+			      <option>SE</option>
+			      <option>TO</option>
+			    </select>
+			  </div>
+			  <div class="col-12">
+			    <label for="sms" class="form-label">Mensagem</label>
+			    <input type="text" class="form-control" id="sms" placeholder="Pergunta, comete ou faça uma observação aos nossos persquisadores">
+			  </div>
+			  <div class="col-12">
+			    <div class="form-check">
+			      <input class="form-check-input" type="checkbox" id="gridCheck">
+			      <label class="form-check-label" for="gridCheck">
+			        Verificar
+			      </label>
+			    </div>
+			  </div>
+			  <div class="col-12">
+			    <button type="submit" class="btn btn-success">Enviar</button>
+			  </div>
+			</form>
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-lg-12">
+				<nav aria-label="Page navigation example">
+				  <ul class="pagination justify-content-center">
+				    <li class="page-item">
+				      <a class="page-link" href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li class="page-item"><a class="page-link" href="#indexx.html">1</a></li>
+				    <li class="page-item"><a class="page-link" href="#">2</a></li>
+				      <a class="page-link" href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<div class="col-lg-12">
+				<footer>
+					<p>&Copy; 2025 Todos os Direitos Reservados :: Desing by: Luíze G.</p>
+				</footer>
+			</div>
+		</div>		
+
+</div>
+
+<script type="text/javascript" src="js/Bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
